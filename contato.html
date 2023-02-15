@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/android-chrome-192x192.png"
+      type="image/x-icon"
+    />
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/51dcf07993.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <title>Cybertech</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1><a href="index.html">CYBERTECH</a></h1>
+
+      <ul class="menu-lista">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solucoes.html">Soluções de Tecnologia</a></li>
+        <li><a href="consultoria.html">Consultoria</a></li>
+        <li class="destaque"><a href="contato.html">Contato</a></li>
+      </ul>
+    </header>
+    <main class="container-principal principal">
+      <section class="cadastro ">
+        <h1>Formulario de contato</h1>
+        <form>
+          <table>
+            <tr>
+              <th><label for="nome">Nome</label></th>
+              <td><input type="text" id="nome" name="nome" placeholder="nome e sobrenome"  class="contato"/></td>
+            </tr>
+
+            <tr>
+              <th><label for="email">E-mail:</label></th>
+              <td><input type="email" name="email" id="email" placeholder="cliente@cliente.com.br" class="contato"/></td>
+            </tr>
+
+            <tr>
+              <th><label for="celular">Celular</label></th>
+              <td><input type="tel" id="celular" name="celular" pattern="[11][0-11]{11}" placeholder="(11) 9 9999-9999" class="contato"/></td>
+            </tr>
+
+            <tr>
+              <th class="titulo"><label for="rede">Por onde nos conheceu?</label></th>
+              <td>
+                <label>Google</label>
+                <input type="radio" name="redes" id="redes" checked />
+                <label>Facebook</label>
+                <input type="radio" name="redes" id="redes" />
+                <label>Linkedinn</label>
+                <input type="radio" name="redes" id="redes" />
+                <label>outro</label>
+                <input type="radio" name="redes" id="redes" />
+              </td>
+            </tr>
+
+            <tr>
+              <th class="titulo"><label for="contato">Por onde podemos entrar em contato?</label></th>
+              <td>
+                <label>Telefone</label>
+                <input type="checkbox" name="contato" id="contato">
+                <label>Whatsapp</label>
+                <input type="checkbox" name="contato" id="contato">
+                <label>E-mail</label>
+                <input type="checkbox" name="contato" id="contato">
+              </td>
+            </tr>
+            
+            <tr>
+              <th class="titulo"><label for="descricao">Descreve as principais necessidades da sua empresa</label></th>
+
+              <td><textarea name="descricao" id="descricao" cols="40" rows="15" placeholder="deixe sua descricao aqui"></textarea></td>
+            </tr>
+
+            <tr>
+              <td class="botao">
+                <input type="submit" class="btn">
+              </td>
+            </tr>
+          </table>
+
+          
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a
+        href="https://www.linkedin.com/in/wesley-oliveira-aa53b221b/"
+        target="_blank"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+      <a
+        href="https://stackoverflow.com/users/21204909/wesley-oliveira"
+        target="_blank"
+        ><i class="fa-brands fa-stack-overflow"></i
+      ></a>
+
+      <div class="footer-content">
+        <ul>
+          <li>Email | contato@cybertech.com.br</li>
+          <li>Contato | (11) 99999-9999</li>
+          <li>Endereço | Rua Ficticia N° 99</li>
+        </ul>
+      </div>
+
+      <p>
+        Site desenvolvido por
+        <a href="https://github.com/WesleyOliveira01" target="_blank"
+          >Wesley Oliveira</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
